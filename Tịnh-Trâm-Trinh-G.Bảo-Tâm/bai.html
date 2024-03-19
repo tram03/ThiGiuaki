@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script type="text/javascript" src="bai.js"></script>
+
+<body>
+    <div class="container">
+        <h2>Quản lý tour du lịch</h2>
+        <div class="form-group">
+            <label for="name">Địa điểm du lịch:</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="img">Hình ảnh:</label>
+            <input type="img" class="form-control" id="image">
+        </div>
+        <div class="form-group">
+            <label for="time">Thời gian du lịch:</label>
+            <input type="text" class="form-control" id="time">
+        </div>
+        <div class="form-group">
+            <label for="user">Hướng dẫn viên:</label>
+            <input type="text" class="form-control" id="user">
+        </div>
+        <div class="form-group">
+            <label for="quantity">Số lượng khách:</label>
+            <input type="text" class="form-control" id="quantity">
+        </div>
+        <div class="form-group">
+            <label for="price">Giá tour:</label>
+            <input type="text" class="form-control" id="price">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="save()">Lưu</button>
+        <button type="button" class="btn btn-success" onclick="show()">Hiển thị</button>
+        <button type="button" class="btn btn-danger" onclick="reset()">Đặt lại</button>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Danh sách tour du lịch</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Địa điểm du lịch</th>
+                    <th>Hình ảnh</th>
+                    <th>Thời gian du lịch</th>
+                    <th>Hướng dẫn viên</th>
+                    <th>Số lượng khách</th>
+                    <th>Giá tour</th>
+                    <th>Cập nhật</th>
+                    <th>Xóa</th>
+                    <th>tbl</th>
+            </thead>
+            <tbody id="tbl"></tbody>
+        </table>
+    </div>
